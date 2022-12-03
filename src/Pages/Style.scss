@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&family=Roboto:wght@100;700&family=Rubik&display=swap");
+
+@mixin FLEX {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: max-content;
+  padding: 1px;
+  //   background-color: #202124;
+  background: url(../assets/image/Stunning-Pokemon-Ball-HD-Background.png);
+  //   background: url(https://i.pinimg.com/736x/90/3c/e8/903ce82d065d12a760eeafe2aec9935a--cool-pokemon-wallpapers-pokemon-backgrounds.jpg);
+  object-fit: cover;
+  border: 1px solid black;
+}
+.title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #bdc3c7;
+  background-color: #000046;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: -2px;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  border: 1px solid black;
+}
+
+.left-content {
+  border: 1px solid pink;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  //   grid-template-columns: repeat(auto-fit, minmax(250px, 0.5fr));
+  gap: 10px;
+  flex-basis: 70%;
+}
+
+.btn-group {
+  display: flex;
+  button {
+    outline: none;
+    border: 1 px solid black;
+    width: 150px;
+    padding: 0.3rem 0;
+    margin: 1rem;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+}
+.card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  //   background-color: #9edef9;
+  border-radius: 1rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.right-content {
+  //   width: 30%;
+  flex-basis: 30%;
+  position: fixed;
+  top: 50px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.right {
+  @include FLEX;
+
+  border-radius: 5%;
+  margin: 0 auto;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+
+  img {
+    height: 200px;
+    width: 200px;
+    margin: 2rem;
+  }
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  h3 {
+    margin-top: -5px;
+  }
+  .group {
+    text-transform: uppercase;
+  }
+}
+.abilities,
+.base-stat {
+  @include FLEX;
+}
+
+.rock {
+  background: linear-gradient(to bottom, #999966 0%, #663300 100%);
+}
+.electric {
+  //   background-color: rgb(255, 255, 161);
+  background: rgb(218, 27, 96);
+  background: linear-gradient(
+    to bottom,
+    rgba(240, 241, 61, 1) 22%,
+    rgba(255, 138, 0, 1) 91%
+  );
+}
+.bug {
+  background-color: #f6d6a7;
+}
+.poison {
+  background: linear-gradient(to bottom, #ff00cc 0%, #333399 100%);
+}
+.normal {
+  background: linear-gradient(to bottom, #c92e48 0%, #ffc3a0 100%);
+}
+.fairy {
+  background: linear-gradient(to bottom, #cc99ff 0%, #ff33cc 100%);
+}
+.fire {
+  background: linear-gradient(to bottom, #f7b733 0%, #ff0000 100%);
+}
+.grass {
+  background: linear-gradient(to bottom, #00b09b 0%, #96c93d 100%);
+}
+.water {
+  background: linear-gradient(to bottom, #007991 0%, #78ffd6 100%);
+}
+.ground {
+  background: linear-gradient(to bottom, #003300 0%, #663300 100%);
+}
+.ghost {
+  background: linear-gradient(to bottom, #bdc3c7 0%, #2c3e50 100%);
+}
+.ice {
+  background: linear-gradient(to bottom, #000046 0%, #1cb5e0 100%);
+}
+.bug {
+  background: linear-gradient(to bottom, #ffd89b 0%, #19547b 100%);
+}
+.psychic {
+  background: linear-gradient(to bottom, #c33764 0%, #1d2671 100%);
+}
+.dark {
+  background: linear-gradient(to bottom, #2c3e50 0%, #202124 100%);
+}
+.steel {
+  background: linear-gradient(to bottom, #808080 0%, #d3d3d3 100%);
+}
+.fighting {
+  background: linear-gradient(to bottom, #ff6666 0%, #202124 100%);
+}
+.dragon {
+  background: rgb(112, 140, 222);
+  background: linear-gradient(
+    0deg,
+    rgba(112, 140, 222, 1) 0%,
+    rgba(102, 0, 102, 1) 100%
+  );
+}
+.flying {
+  background: rgb(244, 243, 243);
+  background: linear-gradient(
+    0deg,
+    rgba(244, 243, 243, 1) 0%,
+    rgba(5, 98, 98, 1) 100%
+  );
+}

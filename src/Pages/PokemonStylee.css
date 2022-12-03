@@ -1,0 +1,67 @@
+.Pokemon {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.Title {
+    background-color: #5ab3f7;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.Title input {
+    width: 200px;
+    height: 40px;
+
+    border-radius: 10px;
+    border: 1px solid #5ab3f7;
+
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.Title button {
+    width: 200px;
+    height: 45px;
+
+    border-radius: 10px;
+    border: 1px solid #5ab3f7;
+
+    color: white;
+    background-color: hsl(206, 87%, 39%);
+
+    font-size: 18px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.Title button:hover {
+    cursor: pointer;
+}
+
+.DisplaySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.DisplaySection h4,
+h3 {
+    margin: 5px;
+}
+
+.DisplaySection img {
+    width: 200px;
+}
